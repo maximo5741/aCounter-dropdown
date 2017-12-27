@@ -33,23 +33,18 @@ function selectc(id){
 
 
 function sendMail() {
-    var text = 0;
-    for(var a = 0; a <= definitions.length; a++){
-        text +=  definitions[a];
-    }
+    var text = "";
+    var e = document.getElementById(definitions[1]);
+    for(var a = 0; a < definitions.length; a++){
 
-   /* for(var b = 0; b <= definitions.length; b++){
-        text2 += definitions[b] +":"+ dContent[b] + "<br />";
+        //text += definitions[a] +":"+ e.options[e.selectedIndex].value;
+        text += definitions[a] +":"+ document.getElementById(definitions[a]).options[document.getElementById(definitions[a]).selectedIndex].value +" ";
     }
-
-    for(var c = 0; c <= definitions.length; c++){
-        text += definitions[c] + text2 + "<br />";
-    }
-*/
+    
     var eReport = "mailto:maxvalle@amazon.com?subject=";
     eReport +="Daily Count";
-    eReport += "&body=this is a test.";
-    eReport += text;
+    eReport += "&body=";
+    eReport += text ;
     window.open(eReport);
 }
 

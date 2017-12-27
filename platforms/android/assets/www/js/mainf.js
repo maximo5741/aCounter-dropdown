@@ -48,8 +48,8 @@ function sendMail() {
 */
     var eReport = "mailto:maxvalle@amazon.com?subject=";
     eReport +="Daily Count";
-    eReport += "&body=this is a test.";
-    eReport += text;
+    eReport += "&body=";
+    eReport += text + document.createElement('br');
     window.open(eReport);
 }
 

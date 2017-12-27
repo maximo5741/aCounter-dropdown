@@ -1,0 +1,11 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "aCounter",
+  "short_name": "aCounter",
+  "version": "me.mdcs.www",
+  "description": "This is an add that was made in order to organice data.",
+  "author": "Maximo Del Valle",
+  "icons": [],
+  "start_url": "index.html"
+}
