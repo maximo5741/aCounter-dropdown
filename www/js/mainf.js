@@ -38,10 +38,11 @@ function sendMail() {
     for(var a = 0; a < definitions.length; a++){
 
         //text += definitions[a] +":"+ e.options[e.selectedIndex].value;
-        text += definitions[a] +":"+ document.getElementById(definitions[a]).options[document.getElementById(definitions[a]).selectedIndex].value +" ";
+        text += definitions[a] +":"+ document.getElementById(definitions[a]).options[document.getElementById(definitions[a]).selectedIndex].value +"  " +
+            " ";
     }
-    
-    var eReport = "mailto:maxvalle@amazon.com?subject=";
+
+    var eReport = "mailto:@amazon.com?subject=";
     eReport +="Daily Count";
     eReport += "&body=";
     eReport += text ;
